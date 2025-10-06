@@ -1,0 +1,65 @@
+.img{
+  width: 1000px;
+  height: 1000px;
+}
+
+a{
+   display: inline-block; 
+  padding: 8px 8px;  
+  border-radius: 4px;   
+  color: #ffffff;      
+  text-align: center;  
+  cursor: pointer;    
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+a img {
+  width: auto;
+  height: 40px;
+}
+
+a:hover{
+  background-color: #d6d6d6;
+}
+
+.a1{
+  position: relative;
+  bottom: 870px;
+  left:550px;
+}
+.a2{
+  position: relative;
+  bottom: 880px;
+  left:550px;
+}
+
+.a3{
+  position: relative;
+  bottom: 550px;
+  left:380px;
+}
+
+.a4{
+  position: relative;
+  bottom: 540px;
+  left:740px;
+}
+
+.a5{
+  position: relative;
+  bottom: 700px;
+  left:550px;
+}
+
+.a6{
+  position: relative;
+  bottom: 495px;
+  left:55px;
+}
+.a7 {
+  position: relative;
+  bottom:250px;
+  left:-250px;
+}
