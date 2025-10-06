@@ -1,0 +1,12 @@
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+img.info {
+    display: flex;
+    justify-self:  center;
+    width: auto;
+    height: 400px;
+}

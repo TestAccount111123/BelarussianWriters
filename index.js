@@ -1,0 +1,113 @@
+const containerEl = document.getElementById('container');
+const imgEl = document.getElementById("img")
+
+const text = [
+    {
+        name: "Рогнеда",
+        text: "Дочь Рогволода; жена князя Владимира, который крестил Русь. Первая христианка в Беларуси ",
+        img: "img/rogneda.png"
+    },
+    {
+        name: "Ефросинья Полоцкая",
+        text: "Внучка Всеслава Полоцкого. Основала два монастыря и содействовала строительству двух каменных церквей - во имя святого Спаса и в честь Богородицы.",
+        img: "img/efrosina.png"
+    },
+    {
+        name: "Анна Екатерина Радзивилл",
+        text: "Предпринимательница, основательница мануфактур в Речи Посполитой",
+        img: "img/anna.png"
+    },
+    {
+        name: "Варвара Кашеварова-Руднева",
+        text: "1- ая из женщин в России защитила докторскую диссертацию по медицине",
+        img: "img/varvara.png"
+    },
+    {
+        name: "Анна Тумаркина",
+        text: "Первая в Европе женщина-профессор философии.",
+        img: "img/tumarkina.png"
+    },
+    {
+        name: "Алоиза Пашкевич",
+        text: "Одна из основателей БСГ, старейшей белорусской национальной партии. Её стихи активно использовались как политические воззвания. ",
+        img: "img/alisa.png"
+    },
+    {
+        name: "София Гольшанская",
+        text: "Жена короля Ягайло, мать короля Казимира IV.",
+        img: "img/sofia.png"
+    },
+    {
+        name: "Бона Сфорца",
+        text: "Жена великого князя литовского Сигизмунда I Старого, мать великого князя литовского Сигизмунда II Августа. Будучи итальянкой, привезла в ВКЛ высокую культуру Ренессанса, организовала экономические реформы. ",
+        img: "img/bana.png"
+    },
+    {
+        name: "Барбара Раздивилл",
+        text: "Барбару считали самой красивой женщиной Великого Княжества Литовского. Трагическая история любви Барбары и Сигизмунда II Августа, её ранняя смерть легли в основу множества легенд. ",
+        img: "img/barbara.png"
+    },
+    {
+        name: "Францишка Уршуля Раздивилл",
+        text: "Писательница, драматург, меценант ",
+        img: "img/franc.png"
+    },
+    {
+        name: "Эмилия Пляттер",
+        text: "Участница восстания 1830-1831 гг",
+        img: "img/emilia.png"
+    },
+    {
+        name: "Стефания Станюта ",
+        text: "Народная артистка БССР и СССР ",
+        img: "img/stefa.png"
+    },
+    {
+        name: "Рима Шерстнева  ",
+        text: "партизанка,  повторила подвиг Александра Матросова",
+        img: "img/rima.png"
+    },
+    {
+        name: "Анастасия Куприянова ",
+        text: "Мать-героиня, отправившая на фронт 5 сыновей и потерявшая их.",
+        img: "img/kuprina.png"
+    },
+    {
+        name: "Зинаида Туснолобова-Марченко ",
+        text: "Первая в Беларуси женщина, которая получила высшую награду комитета Красного Креста - медаль им. Флоренс Найтенгейл ",
+        img: "img/zinaida.png"
+    },
+    {
+        name: "Надежда Ивановна Куницкая ",
+        text: "Герой Социалистического Труда. ",
+        img: "img/nadezda.png"
+    },
+    {
+        name: "Алена Васiлевiч ",
+        text: "Творы: «Сябры», Тэматыка: Маральна-этычная праблема твора. Аўтар-апавядальнiк у творы.",
+        img: "img/alena.png"
+    }
+    
+]
+
+text.map((el, index) => {
+    const aEl = document.getElementById(`a${index + 1}`)
+    aEl.addEventListener("click", () => {
+        console.log(aEl)
+        containerEl.remove()
+        imgEl.remove()
+        const headerEl = document.createElement("h1");
+        const text = document.createElement("p");
+        const img = document.createElement("img");
+        headerEl.append(el.name)
+        headerEl.setAttribute('class', 'info')
+        text.append(el.text)
+        text.setAttribute('class', 'info');
+        img.src = el.img
+        img.setAttribute('class', 'info');
+        document.body.append(headerEl)
+        document.body.append(text)
+        document.body.append(img)
+        
+    })
+})

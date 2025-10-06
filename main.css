@@ -24,42 +24,99 @@ a:hover{
   background-color: #d6d6d6;
 }
 
-.a1{
+#a1{
   position: relative;
   bottom: 870px;
   left:550px;
 }
-.a2{
+#a2{
   position: relative;
   bottom: 880px;
   left:550px;
 }
 
-.a3{
+#a3{
   position: relative;
   bottom: 550px;
   left:380px;
 }
 
-.a4{
+#a4{
   position: relative;
   bottom: 540px;
   left:740px;
 }
 
-.a5{
+#a5{
   position: relative;
   bottom: 700px;
   left:550px;
 }
 
-.a6{
+#a6{
   position: relative;
   bottom: 495px;
   left:55px;
 }
-.a7 {
+#a7 {
   position: relative;
   bottom:250px;
   left:-250px;
+}
+#a8 {
+  position: relative;
+  bottom: 400px;
+}
+#a9 {
+  position: relative;
+  bottom: 800px;
+  left: -100px;
+}
+#a10 {
+  position: relative;
+  bottom: 500px;
+}
+#a11 {
+  position: relative;
+  bottom: 900px;
+  left: -100px;
+}
+#a12 {
+  position: relative;
+  bottom: 150px;
+  left: -90px;
+}
+#a13 {
+  position: relative;
+  bottom: 300px;
+  left: 150px;
+}
+#a14 {
+  position: relative;
+  bottom: 400px;
+}
+#a15 {
+  position: relative;
+  bottom: 600px;
+  left: -200px;
+}
+#a16 {
+  position: relative;
+  bottom: 550px;
+  left: -700px;
+}
+#a17 {
+  position: relative;
+  bottom: 400px;
+  left: -550px;
+}
+#a18 {
+  position: relative;
+  bottom: 440px;
+  left: -685px;
+}
+#a19 {
+  position: relative;
+  bottom: 600px;
+  left: -240px;
 }
