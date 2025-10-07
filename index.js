@@ -117,7 +117,7 @@ text.map((el, index) => {
         containerEl.remove();
         imgEl.remove();
         const headerEl = document.createElement("h1");
-        const text = document.createElement("p");
+        const text = document.createElement("h3");
         const img = document.createElement("img");
         headerEl.append(el.name);
         headerEl.setAttribute('class', 'info');
@@ -130,4 +130,5 @@ text.map((el, index) => {
         document.body.append(img);
         
     })
+
 })
