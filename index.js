@@ -86,6 +86,26 @@ const text = [
         name: "Алена Васiлевiч ",
         text: "Творы: «Сябры», Тэматыка: Маральна-этычная праблема твора. Аўтар-апавядальнiк у творы.",
         img: "img/alena.png"
+    },
+    {
+        name: "Яўгенiя Янiшчыц",
+        text: "Творы: «Мова», Тэматыка: Замiлаванне аўтара выразнасцю i прыгажосцю беларускага слова. Роздум пра няпросты лёс беларускай мовы на працягу шматгадовай гiсторыi народа.",
+        img: "img/yanish.png"
+    },
+    {
+        name: "Данута Бiчэль   ",
+        text: "Творы: «Роднае слова Радзiмы», Тэматыка: Прызнанне ў любовi да роднага краю, роднай мовы праз паэтычныя звароты, метафарычныя тропы, эпiтэты. Роля адухаўленняў i ўвасабленняў у стварэннi вобраза",
+        img: "img/danuta.png"
+    },
+    {
+        name: " Еўдакiя Лось",
+        text: "Творы: «Дзяўчаты мiнулай вайны», Тэматыка: Спалучэнне лiрычнага, грамадзянскага i трагiчнага ў вершы",
+        img: "img/eydakia.png"
+    },
+    {
+        name: " Раiса Баравiкова ",
+        text: "Творы: «Гальштучнiк» (урывак з «Аповесцi чатырох падарожжаў»), Тэматыка: Фантастычныя падзеi ў аснове сюжэта твора, яго займальнасць.",
+        img: "img/raisa.png"
     }
     
 ]
@@ -93,21 +113,21 @@ const text = [
 text.map((el, index) => {
     const aEl = document.getElementById(`a${index + 1}`)
     aEl.addEventListener("click", () => {
-        console.log(aEl)
-        containerEl.remove()
-        imgEl.remove()
+        console.log(aEl);
+        containerEl.remove();
+        imgEl.remove();
         const headerEl = document.createElement("h1");
         const text = document.createElement("p");
         const img = document.createElement("img");
-        headerEl.append(el.name)
-        headerEl.setAttribute('class', 'info')
-        text.append(el.text)
+        headerEl.append(el.name);
+        headerEl.setAttribute('class', 'info');
+        text.append(el.text);
         text.setAttribute('class', 'info');
-        img.src = el.img
+        img.src = el.img;
         img.setAttribute('class', 'info');
-        document.body.append(headerEl)
-        document.body.append(text)
-        document.body.append(img)
+        document.body.append(headerEl);
+        document.body.append(text);
+        document.body.append(img);
         
     })
 })

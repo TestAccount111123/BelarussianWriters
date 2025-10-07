@@ -1,3 +1,7 @@
+h1,info {
+    margin-top: 5%;
+}
+
 .info {
     width: 100%;
     display: flex;
@@ -5,6 +9,7 @@
     flex-direction: column;
 }
 img.info {
+    margin-top: 5%;
     display: flex;
     justify-self:  center;
     width: auto;
